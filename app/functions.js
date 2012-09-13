@@ -11,7 +11,7 @@ define(function() {
     },
 
     functionFunction : function(str) {
-
+         console.log(this.functionFunction)
     },
 
     makeClosures : function(arr, fn) {
