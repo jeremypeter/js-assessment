@@ -58,11 +58,11 @@ define(function() {
     },
 
     duplicates : function(arr) {
+        dupItems = [];
         for (var i = 0; i < arr.length; i++) {
-            var item = arr[i];
-            if(item === item - 1){
-                console.log(item)
-            }
+            
+            
+
         }
         
     },
@@ -75,7 +75,14 @@ define(function() {
     },
 
     findAllOccurrences : function(arr, target) {
+        foundItems = [];
 
+        for(var i = 0; i<arr.length;i++){
+            if(arr[i] === target){
+                foundItems.push(i); 
+            }
+        }
+        return foundItems;
     }
   };
 });
